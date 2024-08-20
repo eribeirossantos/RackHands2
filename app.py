@@ -98,7 +98,26 @@ def main():
                 criar_repositorio_vetores(partes_texto)
                 st.success("Concluído")
 
-
+    # Add the copyright message in the footer
+    st.markdown(
+        """
+        <style>
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: white;
+            color: black;
+            text-align: center;
+        }
+        </style>
+        <div class="footer">
+        <p>Copyright &copy; 2024 [Feito por Eduardo Ribeiro]</p>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 if __name__ == "__main__":
     main()
